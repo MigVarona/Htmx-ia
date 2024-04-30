@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href="/_next/static/media/86fdec36ddd9097e-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preload" href="/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="stylesheet" href="/_next/static/css/5567c00107453a4c.css" data-precedence="next" />
+    <link rel="preload" href="/_next/static/chunks/webpack-2dec0c6fdc025104.js" as="script" fetchPriority="low" />
+    <script src="/_next/static/chunks/47f7927e-8fdb3e8d88eb0e1c.js" async=""></script>
+    <script src="/_next/static/chunks/61-662b6be99789b0fb.js" async=""></script>
+    <script src="/_next/static/chunks/main-app-ae45a6a1ed682a0b.js" async=""></script>
+    <title>AI Chatbot</title>
+    <meta name="description" content="AI Chatbot built with Next.js, Vercel AI, shadcn." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    <meta property="og:title" content="AI Chatbot" />
+    <meta property="og:description" content="AI Chatbot built with Next.js, Vercel AI, shadcn." />
+    <meta property="og:url" content="https://minimal-chatbot.vercel.app/" />
+    <meta property="og:site_name" content="AI Chatbot" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1686" />
+    <meta property="og:image:height" content="882" />
+    <meta property="og:image" content="https://minimal-chatbot.vercel.app/opengraph-image.png?49c2c3ea917a06c7" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://minimal-chatbot.vercel.app/" />
+    <meta name="twitter:title" content="AI Chatbot" />
+    <meta name="twitter:description" content="AI Chatbot built with Next.js, Vercel AI, shadcn." />
+    <meta name="twitter:image:type" content="image/png" />
+    <meta name="twitter:image:width" content="1686" />
+    <meta name="twitter:image:height" content="882" />
+    <meta name="twitter:image" content="https://minimal-chatbot.vercel.app/twitter-image.png?49c2c3ea917a06c7" />
+    <link rel="shortcut icon" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="next-size-adjust" />
+    <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" noModule=""></script>
+</head>
+
+<body class="font-sans antialiased __variable_e66fe9 __variable_bd9c35">
+    <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none"></div>
+    <script>!function () { try { var d = document.documentElement, c = d.classList; c.remove('light', 'dark'); var e = localStorage.getItem('theme'); if ('system' === e || (!e && true)) { var t = '(prefers-color-scheme: dark)', m = window.matchMedia(t); if (m.media !== t || m.matches) { d.style.colorScheme = 'dark'; c.add('dark') } else { d.style.colorScheme = 'light'; c.add('light') } } else if (e) { c.add(e || '') } if (e === 'light' || e === 'dark') d.style.colorScheme = e } catch (e) { } }()</script>
+    <div class="flex flex-col min-h-screen">
+        <header
+            class="sticky top-0 z-50 flex items-center justify-end w-full h-16 px-4 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
+            <div
+                class="absolute flex items-center left-0 lg:left-1/2 lg:-translate-x-1/2 gap-2 px-4 pointer-events-none">
+                <p class="text-lg">AI Chatbot</p><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 dark:hidden">
+                    <defs>
+                        <linearGradient id="gradient-:Riqla:-1" x1="10.6889" y1="10.3556" x2="13.8445" y2="14.2667"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white"></stop>
+                            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-:Riqla:-2" x1="11.7555" y1="4.8" x2="11.7376" y2="9.50002"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white"></stop>
+                            <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M1 16L2.58314 11.2506C1.83084 9.74642 1.63835 8.02363 2.04013 6.39052C2.4419 4.75741 3.41171 3.32057 4.776 2.33712C6.1403 1.35367 7.81003 0.887808 9.4864 1.02289C11.1628 1.15798 12.7364 1.8852 13.9256 3.07442C15.1148 4.26363 15.842 5.83723 15.9771 7.5136C16.1122 9.18997 15.6463 10.8597 14.6629 12.224C13.6794 13.5883 12.2426 14.5581 10.6095 14.9599C8.97637 15.3616 7.25358 15.1692 5.74942 14.4169L1 16Z"
+                        fill="black" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <mask id="mask0_91_2047" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="16"
+                        height="16">
+                        <circle cx="9" cy="8" r="8" fill="black"></circle>
+                    </mask>
+                    <g mask="url(#mask0_91_2047)">
+                        <circle cx="9" cy="8" r="8" fill="black"></circle>
+                        <path
+                            d="M14.2896 14.0018L7.146 4.8H5.80005V11.1973H6.87681V6.16743L13.4444 14.6529C13.7407 14.4545 14.0231 14.2369 14.2896 14.0018Z"
+                            fill="url(#gradient-:Riqla:-1)"></path>
+                        <rect x="11.2222" y="4.8" width="1.06667" height="6.4" fill="url(#gradient-:Riqla:-2)"></rect>
+                    </g>
+                </svg><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="hidden w-6 h-6 dark:block">
+                    <defs>
+                        <linearGradient id="gradient-:Rqqla:-1" x1="10.6889" y1="10.3556" x2="13.8445" y2="14.2667"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="black"></stop>
+                            <stop offset="1" stop-color="black" stop-opacity="0"></stop>
+                        </linearGradient>
+                        <linearGradient id="gradient-:Rqqla:-2" x1="11.7555" y1="4.8" x2="11.7376" y2="9.50002"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="black"></stop>
+                            <stop offset="1" stop-color="black" stop-opacity="0"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M1 16L2.58314 11.2506C1.83084 9.74642 1.63835 8.02363 2.04013 6.39052C2.4419 4.75741 3.41171 3.32057 4.776 2.33712C6.1403 1.35367 7.81003 0.887808 9.4864 1.02289C11.1628 1.15798 12.7364 1.8852 13.9256 3.07442C15.1148 4.26363 15.842 5.83723 15.9771 7.5136C16.1122 9.18997 15.6463 10.8597 14.6629 12.224C13.6794 13.5883 12.2426 14.5581 10.6095 14.9599C8.97637 15.3616 7.25358 15.1692 5.74942 14.4169L1 16Z"
+                        fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <mask id="mask0_91_2047" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="16"
+                        height="16">
+                        <circle cx="9" cy="8" r="8" fill="white"></circle>
+                    </mask>
+                    <g mask="url(#mask0_91_2047)">
+                        <circle cx="9" cy="8" r="8" fill="white"></circle>
+                        <path
+                            d="M14.2896 14.0018L7.146 4.8H5.80005V11.1973H6.87681V6.16743L13.4444 14.6529C13.7407 14.4545 14.0231 14.2369 14.2896 14.0018Z"
+                            fill="url(#gradient-:Rqqla:-1)"></path>
+                        <rect x="11.2222" y="4.8" width="1.06667" height="6.4" fill="url(#gradient-:Rqqla:-2)"></rect>
+                    </g>
+                </svg>
+            </div><button
+                class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                    class="h-4 w-4 animate-spin">
+                    <path
+                        d="M232 128a104 104 0 0 1-208 0c0-41 23.81-78.36 60.66-95.27a8 8 0 0 1 6.68 14.54C60.15 61.59 40 93.27 40 128a88 88 0 0 0 176 0c0-34.73-20.15-66.41-51.34-80.73a8 8 0 0 1 6.68-14.54C208.19 49.64 232 87 232 128Z">
+                    </path>
+                </svg></button>
+        </header>
+        <main class="flex flex-col flex-1 bg-muted/50">
+            <div class="pb-[200px] pt-4 md:pt-10"></div>
+            <div class="fixed inset-x-0 bottom-0 bg-gradient-to-b from-muted/10 from-10% to-muted/30 to-50%">
+                <div class="mb-1"><button
+                        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-10 w-10 absolute right-4 top-1 z-10 bg-background transition-opacity duration-300 sm:right-8 md:top-2 opacity-100"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                            class="h-4 w-4">
+                            <path
+                                d="m205.66 149.66-72 72a8 8 0 0 1-11.32 0l-72-72a8 8 0 0 1 11.32-11.32L120 196.69V40a8 8 0 0 1 16 0v156.69l58.34-58.35a8 8 0 0 1 11.32 11.32Z">
+                            </path>
+                        </svg><span class="sr-only">Scroll to bottom</span></button></div>
+                <div class="mx-auto sm:max-w-2xl sm:px-4">
+                    <div class="flex h-10 items-center justify-center mb-1"></div>
+                    <div class="space-y-4 border-t bg-background px-4 py-2 shadow-lg sm:rounded-t-xl sm:border md:py-4">
+                        <form>
+                            <div
+                                class="relative flex max-h-60 w-full grow flex-col overflow-hidden bg-background px-8 sm:rounded-md sm:border sm:px-12">
+                                <button
+                                    class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground absolute left-0 top-4 h-8 w-8 rounded-full bg-background p-0 sm:left-4"
+                                    data-state="closed"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.07926 0.222253C7.31275 -0.007434 7.6873 -0.007434 7.92079 0.222253L14.6708 6.86227C14.907 7.09465 14.9101 7.47453 14.6778 7.71076C14.4454 7.947 14.0655 7.95012 13.8293 7.71773L13 6.90201V12.5C13 12.7761 12.7762 13 12.5 13H2.50002C2.22388 13 2.00002 12.7761 2.00002 12.5V6.90201L1.17079 7.71773C0.934558 7.95012 0.554672 7.947 0.32229 7.71076C0.0899079 7.47453 0.0930283 7.09465 0.32926 6.86227L7.07926 0.222253ZM7.50002 1.49163L12 5.91831V12H10V8.49999C10 8.22385 9.77617 7.99999 9.50002 7.99999H6.50002C6.22388 7.99999 6.00002 8.22385 6.00002 8.49999V12H3.00002V5.91831L7.50002 1.49163ZM7.00002 12H9.00002V8.99999H7.00002V12Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg><span class="sr-only">New Chat</span></button><textarea tabindex="0" rows="1"
+                                    placeholder="Send a message." spellCheck="false"
+                                    class="min-h-[60px] w-full resize-none bg-transparent px-4 py-[1.3rem] focus-within:outline-none sm:text-sm"></textarea>
+                                <div class="absolute right-0 top-3 sm:right-4"><button
+                                        class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-10"
+                                        type="submit" disabled="" data-state="closed"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"
+                                            class="h-4 w-4">
+                                            <path
+                                                d="M200 32v144a8 8 0 0 1-8 8H67.31l34.35 34.34a8 8 0 0 1-11.32 11.32l-48-48a8 8 0 0 1 0-11.32l48-48a8 8 0 0 1 11.32 11.32L67.31 168H184V32a8 8 0 0 1 16 0Z">
+                                            </path>
+                                        </svg><span class="sr-only">Send message</span></button></div>
+                            </div>
+                        </form>
+                        <p class="px-2 text-center text-xs leading-normal text-muted-foreground hidden sm:block">
+                            by<!-- --> <a href="https://github.com/markeljan/minimal-chatbot" target="_blank"
+                                class="inline-flex flex-1 justify-center gap-1 leading-4 hover:underline"><span>Markeljan</span><svg
+                                    aria-hidden="true" height="7" viewBox="0 0 6 6" width="7" class="opacity-70">
+                                    <path
+                                        d="M1.25215 5.54731L0.622742 4.9179L3.78169 1.75597H1.3834L1.38936 0.890915H5.27615V4.78069H4.40513L4.41109 2.38538L1.25215 5.54731Z"
+                                        fill="currentColor"></path>
+                                </svg></a> <!-- -->based on<!-- --> <a href="https://github.com/vercel-labs/ai-chatbot"
+                                target="_blank"
+                                class="inline-flex flex-1 justify-center gap-1 leading-4 hover:underline"><span>Vercel
+                                    AI Chatbot</span><svg aria-hidden="true" height="7" viewBox="0 0 6 6" width="7"
+                                    class="opacity-70">
+                                    <path
+                                        d="M1.25215 5.54731L0.622742 4.9179L3.78169 1.75597H1.3834L1.38936 0.890915H5.27615V4.78069H4.40513L4.41109 2.38538L1.25215 5.54731Z"
+                                        fill="currentColor"></path>
+                                </svg></a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/_next/static/chunks/webpack-2dec0c6fdc025104.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/86fdec36ddd9097e-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/css/5567c00107453a4c.css\",\"style\"]\n0:\"$L4\"\n"])</script>
+    <script>self.__next_f.push([1, "5:I{\"id\":99842,\"chunks\":[\"272:static/chunks/webpack-2dec0c6fdc025104.js\",\"778:static/chunks/47f7927e-8fdb3e8d88eb0e1c.js\",\"61:static/chunks/61-662b6be99789b0fb.js\"],\"name\":\"\",\"async\":false}\n7:I{\"id\":757,\"chunks\":[\"272:static/chunks/webpack-2dec0c6fdc025104.js\",\"778:static/chunks/47f7927e-8fdb3e8d88eb0e1c.js\",\"61:static/chunks/61-662b6be99789b0fb.js\"],\"name\":\"\",\"async\":false}\n8:I{\"id\":89462,\"chunks\":[\"555:static/chunks/555-8bb03d0c415392e1.js\",\"251:static/chunks/251-0017e3ed569da55b.js\",\"185:static/chunks/ap"])</script>
+    <script>self.__next_f.push([1, "p/layout-7137d5ac3ee08596.js\"],\"name\":\"Toaster\",\"async\":false}\n9:I{\"id\":32092,\"chunks\":[\"555:static/chunks/555-8bb03d0c415392e1.js\",\"251:static/chunks/251-0017e3ed569da55b.js\",\"185:static/chunks/app/layout-7137d5ac3ee08596.js\"],\"name\":\"Providers\",\"async\":false}\nb:I{\"id\":25888,\"chunks\":[\"272:static/chunks/webpack-2dec0c6fdc025104.js\",\"778:static/chunks/47f7927e-8fdb3e8d88eb0e1c.js\",\"61:static/chunks/61-662b6be99789b0fb.js\"],\"name\":\"\",\"async\":false}\nc:I{\"id\":70337,\"chunks\":[\"272:static/chunks/webpack-2dec0c6fdc025104.js\",\"778:static/chunks/47f7927e-8fdb3e8d88eb0e1c.js\",\"61:static/chunks/61-662b6be99789b0fb.js\"],\"name\":\"\",\"async\":false}\ne:I{\"id\":49250,\"chunks\":[\"555:static/chunks/555-8bb03d0c415392e1.js\",\"486:static/chunks/486-babbcbd02a29520f.js\",\"251:static/chunks/251-0017e3ed569da55b.js\",\"931:static/chunks/app/page-1624e97cba7abc91.js\"],\"name\":\"Chat\",\"async\":false}\n4:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/5567c00107453a4c.css\",\"precedence\":\"next\"}]],[\"$\",\"$L5\",null,{\"buildId\":\"rZO4Co4_YR6sKOzO40xqR\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L6\"],\"globalErrorComponent\":\"$7\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{}],[\"$\",\"body\",null,{\"className\":\"font-sans antialiased __variable_e66fe9 __variable_bd9c35\",\"children\":[[\"$\",\"$L8\",null,{}],[\"$\",\"$L9\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col min-h-screen\",\"children\":[\"$La\",[\"$\",\"main\",null,{\"className\":\"flex flex-col flex-1 bg-muted/50\",\"children\":[\"$\",\"$Lb\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$Ld\",[\"$\",\"$Le\",null,{}],null],\"segment\":\"__PAGE__\"},\"styles\":[]}]}]]}]}]]}]]}],null]}]]\n"])</script>
+    <script>self.__next_f.push([1, "f:I{\"id\":60993,\"chunks\":[\"555:static/chunks/555-8bb03d0c415392e1.js\",\"251:static/chunks/251-0017e3ed569da55b.js\",\"185:static/chunks/app/layout-7137d5ac3ee08596.js\"],\"name\":\"IconNextChat\",\"async\":false}\n10:I{\"id\":11938,\"chunks\":[\"555:static/chunks/555-8bb03d0c415392e1.js\",\"251:static/chunks/251-0017e3ed569da55b.js\",\"185:static/chunks/app/layout-7137d5ac3ee08596.js\"],\"name\":\"ThemeToggle\",\"async\":false}\n"])</script>
+    <script>self.__next_f.push([1, "a:[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 flex items-center justify-end w-full h-16 px-4 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute flex items-center left-0 lg:left-1/2 lg:-translate-x-1/2 gap-2 px-4 pointer-events-none\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-lg\",\"children\":\"AI Chatbot\"}],[\"$\",\"$Lf\",null,{\"className\":\"w-6 h-6 dark:hidden\",\"inverted\":true}],[\"$\",\"$Lf\",null,{\"className\":\"hidden w-6 h-6 dark:block\"}]]}],[\"$\",\"$L10\",null,{}]]}]\n6:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"AI Chatbot\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"AI Chatbot built with Next.js, Vercel AI, shadcn.\"}],[\"$\",\"meta\",\"3\",{\"name\":\"theme-color\",\"media\":\"(prefers-color-scheme: light)\",\"content\":\"white\"}],[\"$\",\"meta\",\"4\",{\"name\":\"theme-color\",\"media\":\"(prefers-color-scheme: dark)\",\"content\":\"black\"}],[\"$\",\"meta\",\"5\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"AI Chatbot\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"AI Chatbot built with Next.js, Vercel AI, shadcn.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:url\",\"content\":\"https://minimal-chatbot.vercel.app/\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:site_name\",\"content\":\"AI Chatbot\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:image:width\",\"content\":\"1686\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:image:height\",\"content\":\"882\"}],[\"$\",\"meta\",\"14\",{\"property\":\"og:image\",\"content\":\"https://minimal-chatbot.vercel.app/opengraph-image.png?49c2c3ea917a06c7\"}],[\"$\",\"meta\",\"15\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:site\",\"content\":\"https://minimal-chatbot.vercel.app/\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:title\",\"content\":\"AI Chatbot\"}],[\"$\",\"meta\",\"19\",{\"name\":\"twitter:description\",\"content\":\"AI Chatbot built with Next.js, Vercel AI, shadcn.\"}],[\"$\",\"meta\",\"20\",{\"name\":\"twitter:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"21\",{\"name\":\"twitter:image:width\",\"content\":\"1686\"}],[\"$\",\"meta\",\"22\",{\"name\":\"twitter:image:height\",\"content\":\"882\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:image\",\"content\":\"https://minimal-chatbot.vercel.app/twitter-image.png?49c2c3ea917a06c7\"}],[\"$\",\"link\",\"24\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon-16x16.png\"}],[\"$\",\"link\",\"25\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"link\",\"26\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-touch-icon.png\"}],[\"$\",\"meta\",\"27\",{\"name\":\"next-size-adjust\"}]]\nd:null\n"])</script>
+</body>
+
+</html>
